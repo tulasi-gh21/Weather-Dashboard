@@ -2,20 +2,43 @@
 <html>
 
 <head>
+
     <title>Weather Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <h1>Weather Dashboard</h1>
+    <div class="container">
 
-    <input type="text" id="cityInput" placeholder="Enter City">
+        <h1>Weather Dashboard</h1>
 
-    <button onclick="getWeather()">Search</button>
+        <div class="search-box">
 
-    <div id="weatherResult"></div>
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City">
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+
+            <button onclick="getCurrentLocationWeather()">
+                📍 Current Location
+            </button>
+
+        </div>
+
+        <div id="weatherResult"></div>
+
+        <h2>5-Day Forecast</h2>
+
+        <div id="forecast"></div>
+
+    </div>
 
     <script src="script.js"></script>
 
